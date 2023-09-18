@@ -23,15 +23,14 @@ container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.nav h1 {
-  color: antiquewhite;
+  position: relative;
   margin-top: 20px;
+}
+.logo {
 }
 .nav ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin-top: 20px;
 }
 .nav ul li {
   display: inline-block;
@@ -95,11 +94,12 @@ container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
-  margin-bottom: 24px;
+  margin-bottom: 100px;
 }
 .box-content {
   background-color: #fff3f3;
   padding: 30px 35px;
+  border-radius: 9px;
 }
 .box-content h3 {
   font-size: 22px;
@@ -114,7 +114,8 @@ container {
 .section-1 {
   width: 85%;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
 }
 .section-1-items {
   text-align: center;
@@ -129,9 +130,14 @@ container {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+.image-1 {
+  border-radius: 10px;
+}
 .section-2 {
   width: 85%;
   margin: auto;
+  padding-bottom: 50px;
+  
 }
 .section-2-content {
   display: grid;
@@ -141,11 +147,11 @@ container {
 .image-2 {
   width: 500px;
   height: 500px;
-  /* border-radius: 50%; */
+  border-radius: 10px;
 }
 .section-2-items {
   text-align: center;
-  margin-bottom: 36px;
+   margin-bottom: 36px; */
 }
 .section-2-items h5 {
   font-size: 40px;
@@ -163,10 +169,11 @@ container {
 .section-3 {
   width: 85%;
   margin: auto;
+  margin-bottom: 150px;
 }
 .section-3-items {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .section-3-items h6 {
   font-size: 26px;
@@ -178,7 +185,7 @@ container {
 .section-3-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 100px;
+  gap: 200px;
 }
 .image-3 {
   width: 50px;
@@ -191,6 +198,7 @@ container {
   background-color: #fff3f3;
   padding: 10px 15px;
   margin-bottom: 50px;
+  border-radius: 10px;
 }
 .content-2 p {
   font-size: 18px;
@@ -214,7 +222,8 @@ container {
   background-repeat: no-repeat;
   background-size: cover;
   /* object-fit: contain; */
-  margin-bottom: 40px;
+  margin-bottom: 400px;
+  border-radius: 10px;
 }
 .aside-items {
   min-height: 25vh;
@@ -222,7 +231,7 @@ container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 50%; */
+  
 }
 .aside-items h1 {
   font-size: 26px;
@@ -240,6 +249,9 @@ container {
   text-align: center;
   display: flex;
   justify-content: center;
+  border-bottom: 2px solid #000;
+}
+.more-info-statement{
 }
 .more-info h1 {
   font-size: 25px;
@@ -253,7 +265,6 @@ container {
 .more-info p {
   font-size: 16px;
   color: #363131;
-  border-bottom: 2px solid black;
   margin-bottom: 10px;
 }
 .footer {

@@ -35,16 +35,29 @@ container {
 .nav ul li {
   display: inline-block;
   list-style: none;
-  margin-left: 30px;
+  margin-left: 30px; 
 }
 .nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 14px;
+  padding: 5px 8px;
   text-transform: uppercase;
 }
-.nav ul li a:hover {
-  text-decoration: 2px solid #e02b2b;
+.nav ul li ::after{
+  content: "";
+width: 0%;
+height: 2px;
+background: #e02b2b;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+
+.nav ul li :hover::after {
+  width: 100%;
+  /* border-bottom: 2px solid #e02b2b; */
+  opacity: 0.5s;
 }
 .header-content {
   width: 85%;
@@ -73,8 +86,12 @@ container {
 .header-content-1 a {
   color: #fff4f4;
   text-decoration: none;
-  border: 2px solid wheat;
-  padding: 15px 25px;
+  border: 1px solid wheat;
+  padding: 10px 25px;
+}
+.header-content-1 a:hover{
+  background-color: #e02b2b;
+  transition: 1.6s;
 }
 .articles {
   width: 85%;
@@ -117,6 +134,19 @@ container {
   margin-bottom: 100px;
   padding-bottom: 50px;
 }
+.Layer{
+  background: transparent;
+  height: 95.5%;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+   left: 0px; 
+   transition: 0.5s;
+}
+.Layer:hover{
+  background:rgba(226,0,0,0.7) ;
+}
 .section-1-items {
   text-align: center;
   margin-bottom: 36px;
@@ -126,9 +156,15 @@ container {
   margin-bottom: 24px;
 }
 .section-1-images {
+  /* position: relative; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 30px;
+   width: 100%; */
+}
+.section-1-images-1{
+  position: relative;
+   text-align: center;  
 }
 .image-1 {
   border-radius: 10px;

@@ -56,7 +56,6 @@ transition: 0.5s;
 
 .nav ul li :hover::after {
   width: 100%;
-  /* border-bottom: 2px solid #e02b2b; */
   opacity: 0.5s;
 }
 .header-content {
@@ -128,6 +127,7 @@ transition: 0.5s;
   font-size: 16px;
   text-align: center;
 }
+/* section-1 area */
 .section-1 {
   width: 85%;
   margin: auto;
@@ -136,16 +136,32 @@ transition: 0.5s;
 }
 .Layer{
   background: transparent;
-  height: 95.5%;
+  height: 99.5%;
   width: 100%;
-  border-radius: 10px;
   position: absolute;
-  top: 0px;
-   left: 0px; 
+  border-radius: 10px;
+  top: 0;
+   left: 0; 
    transition: 0.5s;
 }
 .Layer:hover{
   background:rgba(226,0,0,0.7) ;
+}
+.Layer h2{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.Layer:hover h2{
+  bottom: 49%;
+  opacity: 1;
 }
 .section-1-items {
   text-align: center;
@@ -156,19 +172,30 @@ transition: 0.5s;
   margin-bottom: 24px;
 }
 .section-1-images {
-  /* position: relative; */
+   position: relative; 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-   width: 100%; */
+   width: 100%; 
 }
 .section-1-images-1{
   position: relative;
-   text-align: center;  
+  /* width: 100%; */
+   text-align: center;   
+overflow: hidden;
+   flex-basis: 32px;
+   border-radius: 10px;
+}
+.section-1-images-2{
+  position: relative;
+}
+.section-1-images-3{
+  position: relative;
 }
 .image-1 {
   border-radius: 10px;
 }
+/* section-2 area */
 .section-2 {
   width: 85%;
   margin: auto;
@@ -202,6 +229,7 @@ transition: 0.5s;
   font-size: 16px;
   margin-bottom: 60px;
 }
+/* section-3 Area */
 .section-3 {
   width: 85%;
   margin: auto;

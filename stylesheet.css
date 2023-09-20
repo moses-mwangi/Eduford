@@ -309,26 +309,42 @@ overflow: hidden;
   padding: 8px 20px;
 }
 .more-info {
-  margin-bottom: 25px;
   text-align: center;
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #000;
+  position: relative;
+}
+.icons{
+  color: #fff;
 }
 .more-info-statement{
 }
 .more-info h1 {
   font-size: 25px;
-  color: #333030;
+  color:#fff;
   margin-bottom: 15px;
 }
-/* .blue-shape {
-  background-color: blue;
-  z-index: -1px;
-} */
+
+ .blue-shape {
+     position: absolute; 
+     bottom: 0; 
+    left: 0; 
+     z-index: -2; 
+     width: 100%; 
+     overflow: hidden; 
+     line-height: 0; 
+}
+.blue-shape .shape-fill{
+  fill: #032C4B;
+}
+.blue-shape svg{
+  width: calc(131% + 1.3px);
+  height: 334px;
+}
+
 .more-info p {
   font-size: 16px;
-  color: #363131;
+  color: #fff;
   margin-bottom: 10px;
 }
 .footer {
